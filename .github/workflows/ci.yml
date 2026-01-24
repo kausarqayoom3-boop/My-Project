@@ -1,6 +1,7 @@
 name: My First CI
 
-on: push:
+on:
+  push:
     branches:
         - master
 
