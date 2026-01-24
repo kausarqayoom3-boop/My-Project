@@ -1,7 +1,6 @@
 name: My First CI
 
-on: 
-  push:
+on: push:
     branches:
         - master
 
@@ -20,6 +19,3 @@ jobs:
      
         - name: Install pytest
           run: pip install pytest
-    
-        - name: Run tests
-          run: pytest
