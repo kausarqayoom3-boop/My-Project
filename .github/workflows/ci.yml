@@ -2,7 +2,7 @@ name: Calculator CI/CD
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
 
 jobs:
