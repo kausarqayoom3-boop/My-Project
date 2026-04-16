@@ -23,7 +23,7 @@ jobs:
           pip install pytest
 
       - name: Run tests
-        run: pytest   build:
+        run: pytest  
   
       - name: Deploy
         run: echo "App Deployed Successfully"
