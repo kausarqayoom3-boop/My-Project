@@ -1,5 +1,4 @@
 from calculator import add, subtract, multiply, divide
-
 import pytest
 
 def test_add():
