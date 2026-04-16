@@ -1,4 +1,4 @@
-name: Calculator CI
+name: Calculator CI/CD
 
 on:
   push:
@@ -24,6 +24,6 @@ jobs:
 
       - name: Run tests
         run: pytest  
-  
+     
       - name: Deploy
         run: echo "App Deployed Successfully"
