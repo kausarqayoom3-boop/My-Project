@@ -1,25 +1,29 @@
-name: My First CI
+name: Calculator CI
 
 on:
   push:
-    branches:
-        - master
+    branches: [ "main" ]
+  pull_request:
 
 jobs:
-   build:
-     runs-on: ubuntu-latest
+  test:
+    runs-on: ubuntu-latest
 
-     steps:
-        - name: Checkout code
-          uses: actions/checkout@v3
-          
-        - name: Set up Python
-          uses: actions/setup-python@v4
-          with:
-            python-version: '3.x'
-     
-        - name: Install pytest
-          run: pip install pytest
-       
-        - name: Run tests
-          run: pytest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install pytest
+
+      - name: Run tests
+        run: pytest   build:
+  
+      - name: Deploy
+        run: echo "App Deployed Successfully"
