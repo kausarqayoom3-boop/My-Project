@@ -1,5 +1,5 @@
-  GNU nano 4.8                      test_cal.py                                
 from calculator import add, subtract, multiply, divide
+
 import pytest
 
 def test_add():
