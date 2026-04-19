@@ -5,10 +5,10 @@ def test_add():
     assert add(2, 3) == 5
 
 def test_sub():
-    assert subtract(5, 3) == 2
+    assert sub(5, 3) == 2
 
 def test_mul():
-    assert multiply(2, 3) == 6
+    assert mul(2, 3) == 6
 
 def test_divide():
     assert divide(6, 2) == 3
