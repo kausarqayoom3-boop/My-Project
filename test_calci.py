@@ -1,4 +1,4 @@
-from calci import add, subtract, multiply, divide
+from calci import add, sub, mul, divide
 import pytest
 
 def test_add():
